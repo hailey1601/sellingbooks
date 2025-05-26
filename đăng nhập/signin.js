@@ -20,7 +20,7 @@ document.getElementById("register-form").addEventListener("submit", function (ev
 
     alert("Đăng nhập thành công!");
     localStorage.setItem('isLoggedIn', JSON.stringify({email_phone, signIn_password}));
-    window.location.href = "/trang chủ/trangchu.html";
+    window.location.href = "../trang chủ/trangchu.html";
 });
 
 window.addEventListener("load", function () {
@@ -31,6 +31,6 @@ window.addEventListener("load", function () {
 
 
 document.querySelector(".sign-up-button").addEventListener("click", function () {
-    window.location.href = "/đăng ký/login.html"; 
+    window.location.href = "../đăng ký/login.html"; 
 });
 

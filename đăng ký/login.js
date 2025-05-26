@@ -27,5 +27,5 @@ document.getElementById('register-form').addEventListener('submit', function (ev
     localStorage.setItem('userInfo', JSON.stringify(userInfo));
     alert("Bạn đã đăng ký thành công!");
 
-    window.location.href = '/đăng nhập/signin.html';
+    window.location.href = '../đăng nhập/signin.html';
 });

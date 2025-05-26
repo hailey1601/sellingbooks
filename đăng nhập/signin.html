@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+    <link rel="stylesheet" href="signin.css" >
+</head>
+<body>
+    <div id="register-container">
+        <div id="logo-section">
+            <img class="logo" src="/trang chủ/img/logo.png">
+        </div>
+        <div id="form-section">
+            <form id="register-form">
+                <h1 class="form-title"> Đăng nhập </h1>
+                <div class="input-container">
+                    <input type="text" placeholder="Email/Số điện thoại" required>
+                </div>
+                <div class="input-container">
+                    <input type="password" placeholder="Mật khẩu" required>
+                </div>
+                <a href="#" id="forgot-password">Forgot password?</a>
+                <div class="terms-container">
+                    <label> 
+                        <input type="checkbox"> 
+                        Lưu phiên đăng nhập của tôi.  
+                    </label>
+                </div>
+                <div>
+                <button type="submit" class="submit-button"> Đăng nhập </button>
+                <div class="new-account">
+                    <span> Thành viên mới? </span> 
+                    <button class="sign-up-button"> Đăng ký </button>
+                </div>
+            </form>
+        </div> 
+    </div>
+    <footer id="footer">
+        <div class="footer-links">
+            <a href="#">Terms of Service</a>
+            <span>·</span>
+            <a href="#">Privacy</a>
+            <span>·</span>
+            <a href="#">Help</a>
+        </div>
+        <div class="footer-copyright">
+            &copy; 2024 Escapefromreality, Inc.
+        </div>
+    </footer>   
+
+    <script src="signin.js"></script>
+</body>
+</html>

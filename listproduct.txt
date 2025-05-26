@@ -1,0 +1,136 @@
+let bookList = [
+    {
+        id: 1,
+        title: "A Court of Thorns and Roses",
+        price: 260000, 
+        describe: `CUỐN SÁCH ĐẦU TIÊN TRONG LOẠT SÁCH BÁN CHẠY NHẤT
+
+        Với một chút Buffy, Game Of Thrones và Outlander, đây là một loạt truyện tuyệt vời với niềm vui trọn vẹn. 
+
+        Feyre là một nữ thợ săn. Và khi cô nhìn thấy một con nai trong rừng bị một con sói đuổi theo, cô đã giết chết kẻ săn mồi và bắt con mồi của nó để nuôi sống bản thân và gia đình.
+
+        Nhưng con sói không như vẻ bề ngoài, và Feyre không thể đoán trước được cái giá đắt mà cô sẽ phải trả cho cái chết của nó...
+
+        Bị kéo đi khỏi gia đình vì tội giết một nàng tiên, Feyre phát hiện ra rằng kẻ bắt giữ cô, khuôn mặt bị che khuất bởi một chiếc mặt nạ nạm đá quý, đang che giấu nhiều điều hơn cả đôi mắt xanh lá cây sắc sảo của hắn. 
+
+        Khi tình cảm của Feyre dành cho Tamlin chuyển từ thù địch sang đam mê, cô biết rằng vùng đất của các nàng tiên là một nơi nguy hiểm hơn nhiều so với những gì cô nhận ra. Và Feyre phải chiến đấu để phá vỡ một lời nguyền cổ xưa, nếu không cô sẽ mất anh ta mãi mãi.
+
+        Sách của Sarah J. Maas đã bán được hàng triệu bản trên toàn thế giới và được dịch sang 37 ngôn ngữ. Hãy tự mình khám phá câu chuyện kỳ ​​ảo lãng mạn hấp dẫn, sâu sắc, sắp trở thành một loạt phim truyền hình lớn.`
+    }, 
+    {
+        id: 2,
+        title: "A Curse for True Love",
+        price: 320000, 
+        describe: `Hai nhân vật phản diện, một cô gái và một trận chiến chết chóc để có được hạnh phúc mãi mãi.
+
+        Cáo truyền giáo đã mạo hiểm đến phương bắc tráng lệ để tìm kiếm kết thúc có hậu cho mình, và có vẻ như cô ấy đã có được nó. Cô kết hôn với một hoàng tử đẹp trai và sống trong một lâu đài huyền thoại. nhưng Evangeline không biết cái giá khủng khiếp mà cô phải trả cho câu chuyện cổ tích này. Cô ấy không biết mình đã đánh mất những gì và chồng cô ấy quyết tâm đảm bảo rằng cô ấy sẽ không bao giờ phát hiện ra . . . nhưng trước tiên anh ta phải giết Jacks, hoàng tử của những trái tim.
+        
+        Máu sẽ đổ, trái tim sẽ bị đánh cắp, và tình yêu đích thực sẽ bị thử thách trong lời nguyền dành cho tình yêu đích thực, cái kết nghẹt thở được mong đợi cho bộ ba trái tim tan vỡ một thời.`
+    },
+    {
+        id: 3,
+        title: "Better Than The Movies",
+        price: 272000, 
+        describe: `Hoàn hảo cho những người hâm mộ Kasie West và Jenn Bennett, bộ phim hài lãng mạn tuổi teen “ngọt ngào và hài hước” (Kerry Winfrey, tác giả Chờ đợi Tom Hanks) này theo chân một cô gái tuổi teen lãng mạn vô vọng và người hàng xóm dễ thương nhưng đáng ghét của cô khi họ lên kế hoạch thu hút sự chú ý của cô. bởi tình yêu không thể chạm tới của cô ấy.
+
+        Người luôn mơ mộng Liz Buxbaum đã trao trái tim mình cho Michael từ lâu. Nhưng người yêu luôn lạnh lùng, xa cách của cô chưa bao giờ thực sự nhìn thấy cô trước khi anh chuyển đi. Bây giờ anh ấy đã trở lại thị trấn, Liz sẽ làm bất cứ điều gì cần thiết để lọt vào tầm ngắm của anh ấy — và có thể lôi kéo anh ấy làm người hẹn hò trong buổi vũ hội — thậm chí là kết bạn với Wes Bennet.
+        
+        Người hàng xóm hấp dẫn khó chịu có vẻ như là ứng cử viên hàng đầu cho những bộ phim hài lãng mạn giả tưởng, nhưng Wes chỉ là một nỗi đau trong mông Liz kể từ khi họ còn nhỏ. Những trò đùa liên quan đến ếch và những chú lùn cắt cỏ không phải là một người bạn trai tiềm năng. Tuy nhiên, bằng cách nào đó, Wes và Michael lại có thiện cảm với nhau, điều đó có nghĩa là Wes thuộc về Liz.
+        
+        Nhưng khi Liz và Wes lên kế hoạch thu hút sự chú ý của Michael để Liz có được khoảnh khắc vũ hội kỳ diệu của mình, cô ấy bị sốc khi phát hiện ra rằng mình thích ở bên Wes. Và khi họ tiếp tục thân thiết hơn, cô phải xem xét lại tất cả những gì cô nghĩ mình biết về tình yêu—và suy nghĩ lại ý tưởng của riêng mình về Hạnh phúc mãi mãi về sau sẽ như thế nào.`
+    },
+    {
+        id:4,
+        title: "Fourth Wing",
+        price: 513900, 
+        describe: `Hai nhân vật phản diện, một cô gái và một trận chiến chết chóc để có được hạnh phúc mãi mãi.
+
+        Cáo truyền giáo đã mạo hiểm đến phương bắc tráng lệ để tìm kiếm kết thúc có hậu cho mình, và có vẻ như cô ấy đã có được nó. Cô kết hôn với một hoàng tử đẹp trai và sống trong một lâu đài huyền thoại. nhưng Evangeline không biết cái giá khủng khiếp mà cô phải trả cho câu chuyện cổ tích này. Cô ấy không biết mình đã đánh mất những gì và chồng cô ấy quyết tâm đảm bảo rằng cô ấy sẽ không bao giờ phát hiện ra . . . nhưng trước tiên anh ta phải giết Jacks, hoàng tử của những trái tim.
+        
+        Máu sẽ đổ, trái tim sẽ bị đánh cắp, và tình yêu đích thực sẽ bị thử thách trong lời nguyền dành cho tình yêu đích thực, cái kết nghẹt thở được mong đợi cho bộ ba trái tim tan vỡ một thời.`
+    },
+    {
+        id:5,
+        title: "Happy Place",
+        price: 298000, 
+        describe: `Hai nhân vật phản diện, một cô gái và một trận chiến chết chóc để có được hạnh phúc mãi mãi.
+
+        Cáo truyền giáo đã mạo hiểm đến phương bắc tráng lệ để tìm kiếm kết thúc có hậu cho mình, và có vẻ như cô ấy đã có được nó. Cô kết hôn với một hoàng tử đẹp trai và sống trong một lâu đài huyền thoại. nhưng Evangeline không biết cái giá khủng khiếp mà cô phải trả cho câu chuyện cổ tích này. Cô ấy không biết mình đã đánh mất những gì và chồng cô ấy quyết tâm đảm bảo rằng cô ấy sẽ không bao giờ phát hiện ra . . . nhưng trước tiên anh ta phải giết Jacks, hoàng tử của những trái tim.
+        
+        Máu sẽ đổ, trái tim sẽ bị đánh cắp, và tình yêu đích thực sẽ bị thử thách trong lời nguyền dành cho tình yêu đích thực, cái kết nghẹt thở được mong đợi cho bộ ba trái tim tan vỡ một thời.`
+    },
+    {
+        id:6,
+        title: "Harry Potter part 1",
+        price: 259000, 
+        describe: `Hai nhân vật phản diện, một cô gái và một trận chiến chết chóc để có được hạnh phúc mãi mãi.
+
+        Cáo truyền giáo đã mạo hiểm đến phương bắc tráng lệ để tìm kiếm kết thúc có hậu cho mình, và có vẻ như cô ấy đã có được nó. Cô kết hôn với một hoàng tử đẹp trai và sống trong một lâu đài huyền thoại. nhưng Evangeline không biết cái giá khủng khiếp mà cô phải trả cho câu chuyện cổ tích này. Cô ấy không biết mình đã đánh mất những gì và chồng cô ấy quyết tâm đảm bảo rằng cô ấy sẽ không bao giờ phát hiện ra . . . nhưng trước tiên anh ta phải giết Jacks, hoàng tử của những trái tim.
+        
+        Máu sẽ đổ, trái tim sẽ bị đánh cắp, và tình yêu đích thực sẽ bị thử thách trong lời nguyền dành cho tình yêu đích thực, cái kết nghẹt thở được mong đợi cho bộ ba trái tim tan vỡ một thời.`
+    },
+    {
+        id:7,
+        title: "Just For The Summer",
+        price: 253899, 
+        describe: `Hai nhân vật phản diện, một cô gái và một trận chiến chết chóc để có được hạnh phúc mãi mãi.
+
+        Cáo truyền giáo đã mạo hiểm đến phương bắc tráng lệ để tìm kiếm kết thúc có hậu cho mình, và có vẻ như cô ấy đã có được nó. Cô kết hôn với một hoàng tử đẹp trai và sống trong một lâu đài huyền thoại. nhưng Evangeline không biết cái giá khủng khiếp mà cô phải trả cho câu chuyện cổ tích này. Cô ấy không biết mình đã đánh mất những gì và chồng cô ấy quyết tâm đảm bảo rằng cô ấy sẽ không bao giờ phát hiện ra . . . nhưng trước tiên anh ta phải giết Jacks, hoàng tử của những trái tim.
+        
+        Máu sẽ đổ, trái tim sẽ bị đánh cắp, và tình yêu đích thực sẽ bị thử thách trong lời nguyền dành cho tình yêu đích thực, cái kết nghẹt thở được mong đợi cho bộ ba trái tim tan vỡ một thời.`
+    },
+    {
+        id:8,
+        title: "Nothing Like The Movies",
+        price: 280000, 
+        describe: `Hai nhân vật phản diện, một cô gái và một trận chiến chết chóc để có được hạnh phúc mãi mãi.
+
+        Cáo truyền giáo đã mạo hiểm đến phương bắc tráng lệ để tìm kiếm kết thúc có hậu cho mình, và có vẻ như cô ấy đã có được nó. Cô kết hôn với một hoàng tử đẹp trai và sống trong một lâu đài huyền thoại. nhưng Evangeline không biết cái giá khủng khiếp mà cô phải trả cho câu chuyện cổ tích này. Cô ấy không biết mình đã đánh mất những gì và chồng cô ấy quyết tâm đảm bảo rằng cô ấy sẽ không bao giờ phát hiện ra . . . nhưng trước tiên anh ta phải giết Jacks, hoàng tử của những trái tim.
+        
+        Máu sẽ đổ, trái tim sẽ bị đánh cắp, và tình yêu đích thực sẽ bị thử thách trong lời nguyền dành cho tình yêu đích thực, cái kết nghẹt thở được mong đợi cho bộ ba trái tim tan vỡ một thời.`
+    },
+    {
+        id:9,
+        title: "Cây cam ngọt của tôi",
+        price: 108000, 
+        describe: `Hai nhân vật phản diện, một cô gái và một trận chiến chết chóc để có được hạnh phúc mãi mãi.
+
+        Cáo truyền giáo đã mạo hiểm đến phương bắc tráng lệ để tìm kiếm kết thúc có hậu cho mình, và có vẻ như cô ấy đã có được nó. Cô kết hôn với một hoàng tử đẹp trai và sống trong một lâu đài huyền thoại. nhưng Evangeline không biết cái giá khủng khiếp mà cô phải trả cho câu chuyện cổ tích này. Cô ấy không biết mình đã đánh mất những gì và chồng cô ấy quyết tâm đảm bảo rằng cô ấy sẽ không bao giờ phát hiện ra . . . nhưng trước tiên anh ta phải giết Jacks, hoàng tử của những trái tim.
+        
+        Máu sẽ đổ, trái tim sẽ bị đánh cắp, và tình yêu đích thực sẽ bị thử thách trong lời nguyền dành cho tình yêu đích thực, cái kết nghẹt thở được mong đợi cho bộ ba trái tim tan vỡ một thời.`
+    },
+    {
+        id:10,
+        title: "Powerless",
+        price: 511000, 
+        describe: `Hai nhân vật phản diện, một cô gái và một trận chiến chết chóc để có được hạnh phúc mãi mãi.
+
+        Cáo truyền giáo đã mạo hiểm đến phương bắc tráng lệ để tìm kiếm kết thúc có hậu cho mình, và có vẻ như cô ấy đã có được nó. Cô kết hôn với một hoàng tử đẹp trai và sống trong một lâu đài huyền thoại. nhưng Evangeline không biết cái giá khủng khiếp mà cô phải trả cho câu chuyện cổ tích này. Cô ấy không biết mình đã đánh mất những gì và chồng cô ấy quyết tâm đảm bảo rằng cô ấy sẽ không bao giờ phát hiện ra . . . nhưng trước tiên anh ta phải giết Jacks, hoàng tử của những trái tim.
+        
+        Máu sẽ đổ, trái tim sẽ bị đánh cắp, và tình yêu đích thực sẽ bị thử thách trong lời nguyền dành cho tình yêu đích thực, cái kết nghẹt thở được mong đợi cho bộ ba trái tim tan vỡ một thời.`
+    },
+    {
+        id:11,
+        title: "Fairy Tale",
+        price: 303000, 
+        describe: `Hai nhân vật phản diện, một cô gái và một trận chiến chết chóc để có được hạnh phúc mãi mãi.
+
+        Cáo truyền giáo đã mạo hiểm đến phương bắc tráng lệ để tìm kiếm kết thúc có hậu cho mình, và có vẻ như cô ấy đã có được nó. Cô kết hôn với một hoàng tử đẹp trai và sống trong một lâu đài huyền thoại. nhưng Evangeline không biết cái giá khủng khiếp mà cô phải trả cho câu chuyện cổ tích này. Cô ấy không biết mình đã đánh mất những gì và chồng cô ấy quyết tâm đảm bảo rằng cô ấy sẽ không bao giờ phát hiện ra . . . nhưng trước tiên anh ta phải giết Jacks, hoàng tử của những trái tim.
+        
+        Máu sẽ đổ, trái tim sẽ bị đánh cắp, và tình yêu đích thực sẽ bị thử thách trong lời nguyền dành cho tình yêu đích thực, cái kết nghẹt thở được mong đợi cho bộ ba trái tim tan vỡ một thời.`
+    },
+    {
+        id:12, 
+        title: "Holy",
+        price: 484000, 
+        describe: `Hai nhân vật phản diện, một cô gái và một trận chiến chết chóc để có được hạnh phúc mãi mãi.
+
+        Cáo truyền giáo đã mạo hiểm đến phương bắc tráng lệ để tìm kiếm kết thúc có hậu cho mình, và có vẻ như cô ấy đã có được nó. Cô kết hôn với một hoàng tử đẹp trai và sống trong một lâu đài huyền thoại. nhưng Evangeline không biết cái giá khủng khiếp mà cô phải trả cho câu chuyện cổ tích này. Cô ấy không biết mình đã đánh mất những gì và chồng cô ấy quyết tâm đảm bảo rằng cô ấy sẽ không bao giờ phát hiện ra . . . nhưng trước tiên anh ta phải giết Jacks, hoàng tử của những trái tim.
+        
+        Máu sẽ đổ, trái tim sẽ bị đánh cắp, và tình yêu đích thực sẽ bị thử thách trong lời nguyền dành cho tình yêu đích thực, cái kết nghẹt thở được mong đợi cho bộ ba trái tim tan vỡ một thời.`
+    },
+
+];
+
+
+localStorage.setItem('list_product',  JSON.stringify(bookList))

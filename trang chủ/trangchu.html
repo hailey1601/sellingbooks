@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Trang chủ </title>
+    <link rel="stylesheet" href="trangchu.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body>
+    <div id="first-part">
+        <div id="first-line">
+            <div class="contact">
+                <p> Liên hệ: </p>
+                <div class="phone-number" onclick="copyPhone()">
+                    <p> +84 123 456 789 </p>
+                </div>
+                <div id="noti">
+                    <div class="noti-content">
+                        <p> Số điện thoại đã được lưu vào bàn phím bạn</p>
+                        <button id="closeNoti">OK</button>
+                    </div>
+                </div>
+            </div>
+            <div class="signin-login">
+                <a href="/đăng nhập/signin.html"><button>Đăng nhập</button></a>
+                <label> / </label>
+                <a href="/đăng ký/login.html"><button>Đăng ký</button></a>
+            </div>
+            <div class="signinsuccess" style="display: none;">
+                <button class="user-avatar"><i class='bx bx-user-circle'></i></button>
+                <button class="logout-btn"><i class='bx bx-log-out-circle'></i></button>
+            </div>
+        </div>
+        <div id="second-line">
+            <img src="img/logo.png">
+        </div>
+        <div id="third-line-menu">
+            <ul>
+                <li><a href="#"> Thể loại </a>
+                     <ul class="sub-menu">
+                         <li><a href="#"> Fantasy </a></li>
+                         <li><a href="#"> Romance </a></li>
+                         <li><a href="#"> Sci-fi </a></li>
+                         <li><a href="#"> Thriller </a></li>
+                     </ul>
+                </li>
+                <li><a href="#"> Giảm giá </a></li>
+                <li><a href="#"> Yêu thích </a></li>
+                <li><a href="/giỏ hàng/cart.html"> Giỏ hàng </a></li>
+            </ul>
+            <form>
+                <div class="search">
+                    <input type="text" placeholder="Tìm kiếm sản phẩm">
+                    <i class='bx bx-search'></i>
+                </div>
+            </form>
+        </div>
+        <div id="fourth-line">
+            <div class="best-selling"> <p> BÁN CHẠY </p> </div>
+            <hr class="line">
+        </div>
+        <div id="fifth-line"> 
+            <div id="container">
+               <div class="slider-wrapper">
+                  <button id="prev-slide" class="slide-button material-symbols-rounded">
+                   chevron_left
+                  </button>
+                  <ul class="image-list">
+                    <img class="image-item" src="img/beach read.jpg" alt="img-1" />
+                    <img class="image-item" src="img/americanroomate.jpg" alt="img-2" />
+                    <img class="image-item" src="img/book lovers.webp" alt="img-3" />
+                    <img class="image-item" src="img/inheritance.jpg" alt="img-4" />
+                    <img class="image-item" src="img/seven husband.webp" alt="img-5" />
+                    <img class="image-item" src="img/seven year.jpg" alt="img-6" /> 
+                  </ul>
+                  <button id="next-slide" class="slide-button material-symbols-rounded">
+                   chevron_right
+                  </button>
+               </div>
+               <div class="slider-scrollbar">
+                  <div class="scrollbar-track">
+                     <div class="scrollbar-thumb"> </div>
+                  </div>
+               </div>
+            </div> 
+        </div>
+    </div>
+    <div id="second-part">
+        <div class="sixth-line">
+            <div class="first">
+                <label class="title"> TRUYỆN MỚI </label>
+                <hr class="line-2">
+            </div>
+            <div class="second">
+                <div class="second-1">
+                    <div class="book">
+                        <img src="img/a court of thorns and roses.jpg"> <br>
+                        <label> A Court of Thorns and Roses </label>
+                        <p> 💵 260.000 </p>
+                        <div class="overlay">
+                            <button class="view-detail">Xem chi tiết</button>
+                            <button class="add-to-cart">Giỏ hàng</button>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <img src="img/acursefortruelove.jpg"> <br>
+                        <label> A Curse for True Love </label>
+                        <p> 💵 320.000đ </p>
+                        <div class="overlay">
+                            <button class="view-detail">Xem chi tiết</button>
+                            <button class="add-to-cart">Giỏ hàng</button>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <img src="img/betterthanthemovies.jpg"> <br>
+                        <label> Better Than The Movies </label>
+                        <p> 💵 272.000đ </p>
+                        <div class="overlay">
+                            <button class="view-detail">Xem chi tiết</button>
+                            <button class="add-to-cart">Giỏ hàng</button>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <img src="img/fourthwing.jpg"> <br>
+                        <label> Fourth Wing </label>
+                        <p> 💵 513.900đ </p>
+                        <div class="overlay">
+                            <button class="view-detail">Xem chi tiết</button>
+                            <button class="add-to-cart">Giỏ hàng</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="second-2">
+                    <div class="book">
+                        <img src="img/happyplace.jpg"> <br>
+                        <label> Happy Place </label>
+                        <p> 💵 298.000đ </p>
+                        <div class="overlay">
+                            <button class="view-detail">Xem chi tiết</button>
+                            <button class="add-to-cart">Giỏ hàng</button>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <img src="img/harrypotter1.jpg"> <br>
+                        <label> Harry Potter part 1 </label>
+                        <p> 💵 259.000đ </p>
+                        <div class="overlay">
+                            <button class="view-detail">Xem chi tiết</button>
+                            <button class="add-to-cart">Giỏ hàng</button>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <img src="img/justforthesummer.jpg"> <br>
+                        <label> Just For The Summer </label>
+                        <p> 💵 253,899đ </p>
+                        <div class="overlay">
+                            <button class="view-detail">Xem chi tiết</button>
+                            <button class="add-to-cart">Giỏ hàng</button>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <img src="img/nothinglikethemovies.jpg"> <br>
+                        <label> Nothing Like The Movies </label>
+                        <p> 💵 280.000đ </p>
+                        <div class="overlay">
+                            <button class="view-detail">Xem chi tiết</button>
+                            <button class="add-to-cart">Giỏ hàng</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="second-3-hidden">
+                    <div class="book">
+                        <img src="img/caycamngot.jpg"> <br>
+                        <label> Cây cam ngọt của tôi </label>
+                        <p> 💵 108.000đ </p>
+                        <div class="overlay">
+                            <button class="view-detail">Xem chi tiết</button>
+                            <button class="add-to-cart">Giỏ hàng</button>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <img src="img/powerless.jpg"> <br>
+                        <label> Powerless </label>
+                        <p> 💵 511.000đ </p>
+                        <div class="overlay">
+                            <button class="view-detail">Xem chi tiết</button>
+                            <button class="add-to-cart">Giỏ hàng</button>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <img src="img/holy.jpg"> <br>
+                        <label> Holy </label>
+                        <p> 💵 484.000đ </p>
+                        <div class="overlay">
+                            <button class="view-detail">Xem chi tiết</button>
+                            <button class="add-to-cart">Giỏ hàng</button>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <img src="img/fairytale.jpg"> <br>
+                        <label> Fairy Tale </label>
+                        <p> 💵 303.000đ </p>
+                        <div class="overlay">
+                            <button class="view-detail">Xem chi tiết</button>
+                            <button class="add-to-cart">Giỏ hàng</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="more">
+                <label> Xem thêm </label>
+            </div>
+         </div>
+    </div>
+    <div class="third-part">
+        <div class="first-box">
+            <h3> Theo dõi chúng tôi qua </h3>
+            <i class='bx bxl-instagram' ></i>
+            <i class='bx bxl-facebook-circle'></i>
+            <i class='bx bxl-tiktok'></i>
+        </div>
+        <div class="second-box">
+            <h3> Liên hệ </h3>
+            <label> escapefromthereality24@gmail.com </label> <br>
+            <label>  +84 123 456 789 </label>
+        </div>
+        <div class="third-box">
+            <h3> Khác </h3>
+            <label><a href=""> Về chúng tôi </a></label> <br>
+            <label><a href=""> Cách thanh toán </a></label> <br>
+            <label><a href=""> Chính sách thanh toán </a></label> <br>
+            <label><a href=""> Chính sách bảo mật </a></label> <br>
+            <label><a href=""> Chính sách vận chuyển </a></label> <br>
+        </div>
+        <div class="fourth-box">
+            <div>
+                <input type="text" placeholder="Nhập địa chỉ email" id="shortcut-notification">
+                <button id="notification"> Nhận thông báo </button>
+            </div>
+        </div>
+     </div>
+     
+    <script src="trangchu.js"></script>
+</body>
+</html>

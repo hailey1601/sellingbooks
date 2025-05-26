@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng</title>
+    <link rel="stylesheet" href="cart.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
+</head>
+<body>
+    <div id="first-part">
+        <div id="first-line">
+            <div class="contact">
+                <p> Liên hệ: </p>
+                <div class="phone-number" onclick="copyPhone()">
+                    <p> +84 123 456 789 </p>
+                </div>
+                <div id="noti">
+                    <div class="noti-content">
+                        <p> Số điện thoại đã được lưu vào bàn phím bạn</p>
+                        <button id="closeNoti">OK</button>
+                    </div>
+                </div>
+            </div>
+            <div class="signin-login">
+                <a href="/đăng nhập/signin.html"><button>Đăng nhập</button></a>
+                <label> / </label>
+                <a href="/đăng ký/login.html"><button>Đăng ký</button></a>
+            </div>
+            <div class="signinsuccess" style="display: none;">
+                <button class="user-avatar"><i class='bx bx-user-circle'></i></button>
+                <button class="logout-btn"><i class='bx bx-log-out-circle'></i></button>
+            </div>
+        </div>
+        <div id="second-line">
+            <img src="/trang chủ/img/logo.png">
+        </div>
+        <div id="third-line-menu">
+            <ul>
+                <li><a href=""> Thể loại </a>
+                     <ul class="sub-menu">
+                         <li><a href=""> Fantasy </a></li>
+                         <li><a href="#"> Romance </a></li>
+                         <li><a href="#"> Sci-fi </a></li>
+                         <li><a href="#"> Thriller </a></li>
+                     </ul>
+                </li>
+                <li><a href=""> Giảm giá </a></li>
+                <li><a href="#"> Yêu thích </a></li>
+                <li><a href="/giỏ hàng/cart.html"> Giỏ hàng </a></li>
+            </ul>
+            <form>
+                <div class="search">
+                    <input type="text" placeholder="Tìm kiếm sản phẩm">
+                    <i class='bx bx-search'></i>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="second-part">
+        <div class="second-first-line">
+            <a href="/trang chủ/trangchu.html"> Trang chủ </a> / <a href="/giỏ hàng/cart.html"> Giỏ hàng </a>
+        </div>
+    </div>
+
+    <div class="cart">
+        <h2>Giỏ hàng của bạn</h2>
+        <table class="cart-table">
+            <thead>
+                <tr>
+                    <th>Ảnh sản phẩm</th>
+                    <th>Tên sản phẩm</th>
+                    <th>Đơn giá</th>
+                    <th>Số lượng</th>
+                    <th>Thành tiền</th>
+                    <th>Xóa</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img id="product-image" alt="Product Image"></td>
+                    <td><label id="product-name">Funny Story</label></td>
+                    <td id="product-price">370.000₫</td>
+                    <td class="quantity-btn">
+                        <button class="decrease-qty">-</button>
+                        <input type="text" class="quantity" value="1">
+                        <!-- Dùng data-index để đánh dấu vị trí của sản phẩm -->
+                        <button class="increase-qty" data-index="${index}">+</button>
+                    </td>
+                    <td id="product-total-price">370.000₫</td>
+                    <td><button class="delete-btn"><i class='bx bxs-trash'></i></button></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="cart-actions">
+            <button class="continue-shopping">TIẾP TỤC MUA HÀNG</button>
+            <div class="checkout-section">
+                <span>Tổng tiền thanh toán: <strong id="cart-total">0₫</strong></span>
+                <button class="proceed-checkout">TIẾN HÀNH THANH TOÁN</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="third-part">
+        <div class="first-box">
+            <h3> Theo dõi chúng tôi qua </h3>
+            <i class='bx bxl-instagram' ></i>
+            <i class='bx bxl-facebook-circle'></i>
+            <i class='bx bxl-tiktok'></i>
+        </div>
+        <div class="second-box">
+            <h3> Liên hệ </h3>
+            <label> escapefromthereality24@gmail.com </label> <br>
+            <label>  +84 123 456 789 </label>
+        </div>
+        <div class="third-box">
+            <h3> Khác </h3>
+            <label><a href=""> Về chúng tôi </a></label> <br>
+            <label><a href=""> Cách thanh toán </a></label> <br>
+            <label><a href=""> Chính sách thanh toán </a></label> <br>
+            <label><a href=""> Chính sách bảo mật </a></label> <br>
+            <label><a href=""> Chính sách vận chuyển </a></label> <br>
+        </div>
+        <div class="fourth-box">
+            <div>
+                <input type="text" placeholder="Nhập địa chỉ email" id="shortcut-login">
+                <button id="login"> Đăng ký </button>
+            </div>
+        </div>
+    </div> 
+
+    <script src="cart.js"></script>
+</body>
+</html>
